@@ -12,3 +12,12 @@
 <img width="821" alt="Screenshot 2024-07-22 at 5 48 56 PM" src="https://github.com/user-attachments/assets/d9fc0865-e7d2-4675-bcd1-676e958bb8cc">
 </p> I use man Snort to look at options before I run snort. The following code means: run snort in quiet mode. the log directory is var/log/snort, and the interface is enp0s1. The alert mode is console (because we are displaying it to ourselves and not yet logging them), and the configuration file is etc/snort/snort.conf 
 </p> <img width="1052" alt="Screenshot 2024-07-22 at 6 15 11 PM" src="https://github.com/user-attachments/assets/54e50a69-a55f-45b0-a9fc-1e96c6640495" </p>
+</p> I open a terminal in my Kali Linux machine and perfom a ping on the ubuntu vm that has Snort installed. Snort picks this up, as I can see in my Ubuntu Machine. </p>
+<img width="1440" alt="Screenshot 2024-07-23 at 7 28 05 PM" src="https://github.com/user-attachments/assets/9570edca-10af-4f84-b1a1-b6edf7afb899">
+</p> I now write another rule for SSH connections. I use my vim text editor to add the following local rule: </p>
+<img width="867" alt="Screenshot 2024-07-23 at 7 32 22 PM" src="https://github.com/user-attachments/assets/cd3ba14d-3c51-425f-8216-32470c2c9066">
+</p> I SSH the ubuntu macihne from my Kali Linux vm while running Snort, and authenticate successfully. </p>
+<img width="843" alt="Screenshot 2024-07-23 at 8 19 50 PM" src="https://github.com/user-attachments/assets/3f025766-2117-465e-a614-0d9361ca55c9">
+</p> I see the SSH authentication attempts through Snort </p>
+<img width="1403" alt="Screenshot 2024-07-23 at 9 08 42 PM" src="https://github.com/user-attachments/assets/a86c6f2d-fcf2-4adb-b395-56b8159cfbc5">
+
