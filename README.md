@@ -26,9 +26,4 @@
 <img width="1194" alt="Screenshot 2024-07-24 at 2 58 30 PM" src="https://github.com/user-attachments/assets/9ea813e1-61b7-4f17-baac-aa120079c423">
 </p> I start up Snort on my ubuntu machine and then use my kali linux machine to ftp into the ubuntu machine. I can now see ftp authentication attempts from my kali linux vm into my ubuntu machine through snort. </p>
 <img width="1440" alt="Screenshot 2024-07-24 at 3 09 21 PM" src="https://github.com/user-attachments/assets/ceefb353-4c8d-4a1d-8f16-3237f663ca8d">
-</p> I want to take a look at some community rules that I had previously disabled. I navigate to the snort.conf file to uncomment the lines </p>
-<img width="852" alt="Screenshot 2024-07-24 at 3 20 55 PM" src="https://github.com/user-attachments/assets/106f245e-d5e2-4212-a417-3adc208b227b">
-</p> I navigate to Snort's website and download/extract the community rules for Snort  v2.9. This is a set of rules that allows you to detect exploits, intrusions for specific CVE's, malware, etc. One important ruleset is the eternal blue rule, which filters a Windows exploit that allows cyber threat actors to remotely execute arbitrary code and gain access to a network by sending specially crafted packets. I will copy this rule and add it to my local ruleset. 
-</p> <img width="910" alt="Screenshot 2024-07-24 at 4 06 27 PM" src="https://github.com/user-attachments/assets/252c88f9-e943-400e-9121-0f005dfc46cf"> </p>
-
 
